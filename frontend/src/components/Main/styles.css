@@ -1,0 +1,36 @@
+main {
+    padding: 30px 20px;
+    background: #222;
+    border-radius: 5px;
+}
+
+.inner-container {
+    width: 850px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.container.main {
+    margin-top: 100px;
+    display: block;
+}
+
+p > span {
+    color: burlywood;
+}
+
+h1 {
+    font-family: Poppins;
+    font-size: 48px;
+    color: rgb(228, 166, 86);
+
+    width: 900px;
+    margin-bottom: 30px;
+}
+
+p {
+    font-family: Roboto;
+    font-size: 20px;
+    line-height: 30px;
+}
+

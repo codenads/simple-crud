@@ -1,0 +1,35 @@
+header {
+    background: #222;
+}
+
+.desktop-nav {
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.desktop-nav span {
+    font-family: Poppins;
+    text-transform: uppercase;
+}
+
+.desktop-nav ul {
+    display: flex;
+}
+
+.desktop-nav ul li {
+    font-family: Roboto;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 20px 10px;
+
+    cursor: pointer;
+    margin: 0 10px;
+    transition: color .2s ease;
+    overflow: hidden;
+}
+
+.desktop-nav ul li:hover {
+    color: burlywood;
+}

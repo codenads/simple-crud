@@ -27,6 +27,9 @@ const Read = () => {
                     {
                         users.map(user => (
                             <li key={user.id} className="user-item">
+                                <span>Id: {user.id}</span>
+                                <p></p>
+
                                 <span>Name</span>
                                 <p>{user.name}</p>
 

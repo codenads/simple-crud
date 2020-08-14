@@ -12,7 +12,7 @@ const Header = () => {
                 <ul>
                     <li><Link to="/create">Create</Link></li>
                     <li><Link to="/read">Read</Link></li>
-                    <li><Link to="/create">Update</Link></li>
+                    <li><Link to="/update">Update</Link></li>
                     <li><Link to="/create">Delete</Link></li>
                 </ul>
             </nav>

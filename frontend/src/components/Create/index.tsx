@@ -6,7 +6,7 @@ const Create = () => {
     return (
         <div>
             <Header />
-            <main className="container main">
+            <main className="container main smaller">
                 <h2>Criar um usuário</h2>
                 <form>
                     <label htmlFor="name">Name</label>

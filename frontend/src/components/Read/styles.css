@@ -1,0 +1,31 @@
+
+.user-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.user-item {
+    background: #333;
+    
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.user-item span {
+    font-family: Arial;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.user-item p {
+    font-size: 20px;
+}
+
+.user-item p + span {
+    display: block;
+    margin-top: 15px;
+}

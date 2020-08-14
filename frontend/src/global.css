@@ -47,3 +47,8 @@ img {
     margin-top: 100px;
     display: block;
 }
+
+
+.container.main.smaller {
+    max-width: 720px;
+}

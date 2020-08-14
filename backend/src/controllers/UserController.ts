@@ -32,8 +32,8 @@ class UserController {
         };
 
         const [id] = await knex('users').insert(user);
-
-        return response.json({id, ...user});
+        if(id) return response.json({message: "Usuário criado com sucesso!"})
+        return response.json({message: "Não foi possível criar o usuário. "});
 
     }
 

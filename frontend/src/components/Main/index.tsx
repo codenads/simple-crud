@@ -9,9 +9,9 @@ const Main = () => {
             <Header />
             <main className="container main">
                 <div className="inner-container">
-                    <h1>Seja bem-vindo ao<br /> SIMPLE-CRUD</h1>
-                    <p>As tecnologias utilizadas no <span>backend</span> foram Node.JS em conjunto com <span>Typescript</span>.<br />
-                Frontend feito com <span>React.js</span> também em conjunto com <span>Typescript</span>.
+                    <h1>Welcome to<br /> SIMPLE-CRUD</h1>
+                    <p>The technologies used in the <span>backend</span> was Node.JS alongside with <span>Typescript</span>.<br />
+                Frontend made with <span>React.js</span> also alongside with <span>Typescript</span>.
                 </p>
                 </div>
             </main>

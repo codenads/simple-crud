@@ -4,6 +4,7 @@ import Main from './components/Main';
 import Create from './components/Create';
 import Read from './components/Read';
 import Update from './components/Update'
+import Delete from './components/Delete'
 
 const Routes = () => {
     return (
@@ -12,6 +13,7 @@ const Routes = () => {
             <Route component={Create} path="/create" />
             <Route component={Read} path="/read" />
             <Route component={Update} path="/update" />
+            <Route component={Delete} path="/delete" />
         </BrowserRouter>
     );
 }

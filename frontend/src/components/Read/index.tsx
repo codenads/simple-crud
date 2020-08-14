@@ -8,7 +8,7 @@ const Read = () => {
         <div>
             <Header />
             <main className="container main smaller">
-                <h2>Lista de usuários</h2>
+                <h2>All users</h2>
                 <ul className="user-list">
                     <li className="user-item">
                         <span>Name</span>

@@ -9,8 +9,11 @@ const Update = () => {
         <div>
             <Header />
             <main className="container main smaller">
-                <h2>Atualizar um usuário</h2>
+                <h2>Update a user</h2>
                 <form>
+                    <label htmlFor="id">Insert the ID</label>
+                    <input type="text"/>
+                    
                     <label htmlFor="name">Name</label>
                     <input name="name" id="name" type="text"/>
 
@@ -20,7 +23,7 @@ const Update = () => {
                     <label htmlFor="phone">Phone</label>
                     <input name="phone" id="phone" type="text"/>
 
-                    <button type="submit">Atualizar</button>
+                    <button type="submit">Update</button>
                 </form>
             </main>
         </div>

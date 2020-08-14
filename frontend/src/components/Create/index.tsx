@@ -7,7 +7,7 @@ const Create = () => {
         <div>
             <Header />
             <main className="container main smaller">
-                <h2>Criar um usuário</h2>
+                <h2>Create a user</h2>
                 <form>
                     <label htmlFor="name">Name</label>
                     <input name="name" id="name" type="text"/>
@@ -18,7 +18,7 @@ const Create = () => {
                     <label htmlFor="phone">Phone</label>
                     <input name="phone" id="phone" type="text"/>
 
-                    <button type="submit">Cadastrar</button>
+                    <button type="submit">Sign up</button>
                 </form>
             </main>
         </div>

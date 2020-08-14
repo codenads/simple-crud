@@ -2,10 +2,10 @@
 
 ## Backend
 O Backend da aplicação foi feito utilizando NODE.js em conjunto com Typescript,
-com a utilização de alguma Librarys/Packages:
+com a utilização de alguma Librarys/Packages:<br />
 Express.js
 Knex.js
-Cors
+Cors<br />
 E o banco de dados utilizado é o SQlite3.
 
 ## Frontend

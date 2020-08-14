@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 import './styles.css'
 
@@ -7,12 +8,12 @@ const Header = () => {
     return (
         <header>
             <nav className="container desktop-nav">
-                <span>simple-crud</span>
+                <Link to="/">simple-crud</Link>
                 <ul>
-                    <li>Create</li>
-                    <li>Read</li>
-                    <li>Update</li>
-                    <li>Delete</li>
+                    <li><Link to="/create">Create</Link></li>
+                    <li><Link to="/create">Read</Link></li>
+                    <li><Link to="/create">Update</Link></li>
+                    <li><Link to="/create">Delete</Link></li>
                 </ul>
             </nav>
         </header>

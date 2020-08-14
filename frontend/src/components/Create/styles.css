@@ -1,0 +1,67 @@
+
+h2 {
+    font-family: Poppins;
+    font-size: 36px;
+    color: rgb(235,235,235);
+    text-align: center;
+
+    margin-bottom: 30px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-bottom: 5px;
+    
+    color: rgb(235,235,235);
+}
+
+form input {
+    display: block;
+    width: 100%;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+form input + label {
+    display: block;
+    margin-top: 15px;
+}
+
+form button {
+    border: 1px solid rgb(235,235,235);
+    border-radius: 5px;
+    outline: none;
+    background: #222;
+    font-family: Roboto;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #fff;
+
+    margin: 20px 0;
+    padding: 15px 20px;
+    cursor: pointer;
+
+    transition: all .2s ease;
+}
+
+form button:hover {
+    border-color: burlywood;
+    color: burlywood;
+}
+
+.container.main {
+    max-width: 720px;
+}
+

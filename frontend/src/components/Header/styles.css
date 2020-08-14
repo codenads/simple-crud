@@ -8,28 +8,32 @@ header {
     padding: 0 20px;
 }
 
-.desktop-nav span {
+.desktop-nav > a {
     font-family: Poppins;
     text-transform: uppercase;
+    font-size: 24px;
+    color: rgb(228, 166, 86);
 }
 
 .desktop-nav ul {
     display: flex;
 }
 
-.desktop-nav ul li {
+.desktop-nav ul li a {
+    display: block;
+
     font-family: Roboto;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
+
     padding: 20px 10px;
+    margin: 0 10px;
 
     cursor: pointer;
-    margin: 0 10px;
     transition: color .2s ease;
-    overflow: hidden;
 }
 
-.desktop-nav ul li:hover {
+.desktop-nav ul li a:hover {
     color: burlywood;
 }

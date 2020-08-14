@@ -1,25 +1,24 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import api from '../../services/api';
+
 import './styles.css';
 
-const users = [
-    {
-        name: "Luís",
-        email: "codenads@outlook.com",
-        phone: "(82) 9 9810-3320",
-    },
-    {
-        name: "Luís",
-        email: "codenads@outlook.com",
-        phone: "(82) 9 9810-3320",
-    },
-    {
-        name: "Luís",
-        email: "codenads@outlook.com",
-        phone: "(82) 9 9810-3320",
-    },
-]
+interface IUser {
+    id: number;
+    name: string;
+    email: string;
+    phone: string;
+}
 
 const Read = () => {
+    const [users, setUsers] = useState<IUser[]>([]);
+
+    useEffect(() => {
+        api.get('users').then(response => {
+            setUsers(response.data);
+        })
+    },[])
+
     return (
         <div>
             <main className="container main smaller">
@@ -27,7 +26,7 @@ const Read = () => {
                 <ul className="user-list">
                     {
                         users.map(user => (
-                            <li className="user-item">
+                            <li key={user.id} className="user-item">
                                 <span>Name</span>
                                 <p>{user.name}</p>
 

@@ -31,33 +31,6 @@ a {
     text-decoration: none;
 }
 
-img {
-    display: block;
-}
-
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex;
-}
-
-.inner-container {
-    width: 90%;
-    margin: 0 auto;
-    margin-bottom: 20px;
-}
-
-.container.main {
-    margin-top: 100px;
-    display: block;
-}
-
-
-.container.main.smaller {
-    max-width: 720px;
-}
-
 h2 {
     font-family: Poppins;
     font-size: 36px;
@@ -129,4 +102,27 @@ form button {
 form button:hover {
     border-color: var(--active-color);
     color: var(--active-color);
+}
+
+
+.container {
+    max-width: 960px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.inner-container {
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.container.main {
+    margin-top: 100px;
+    display: block;
+}
+
+
+.container.main.smaller {
+    max-width: 720px;
 }

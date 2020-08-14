@@ -1,11 +1,13 @@
 import React, { useState } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
 import Header from './components/Header';
-import Main from './components/Main';
-import Form from './components/Form'
-import Read from './components/Read';
-import Delete from './components/Delete'
 import IDField from './components/IDField';
+import Main from './pages/Main';
+import Form from './pages/Form'
+import Read from './pages/Read';
+import Delete from './pages/Delete'
+
 
 const Routes = () => {
     const [id, setId] = useState('');

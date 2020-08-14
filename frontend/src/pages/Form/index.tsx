@@ -17,32 +17,30 @@ const Form: React.FC<IForm> = (props) => {
         setName('');
         setEmail('');
         setPhone('');
+        
     }
 
     function handleFormSubmit(event: any) {
         event.preventDefault();
-        if(props.children && props.id) {
-            console.log(props.id);
-            api.put(`/users/${props.id}`, {
-                name,
-                email,
-                phone
-            }).then(response => alert(response.data.message));
-            clearInputs();
+        if(props.children) {
+            if(props.id) {
+                api.put(`/users/${props.id}`, {
+                    name,
+                    email,
+                    phone
+                }).then(response => alert(response.data.message));
+                clearInputs();
+            }
+            else alert("Insira um ID válido.");
         }
-        else if(!props.children) {
+        else {
             api.post('/users', {
                 name,
                 email,
                 phone
             }).then(response => alert(response.data.message));
             clearInputs();
-        }
-        else {
-            alert('Insira um ID válido.')
-            clearInputs();
-        }
-        
+        }      
     }
 
     return (
@@ -52,7 +50,7 @@ const Form: React.FC<IForm> = (props) => {
                 <form>
 
                     {props.children}
-
+                    
                     <label htmlFor="name">Name</label>
                     <input 
                         name="name" 

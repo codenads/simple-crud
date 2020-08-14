@@ -6,6 +6,7 @@ const Delete = () => {
 
     function handleSubmit(event: any) {
         event.preventDefault();
+        
         api.delete(`/users/${id}`).then(response => alert(response.data.message));
         setId('');
     }

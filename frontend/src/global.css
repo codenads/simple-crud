@@ -104,6 +104,10 @@ form button:hover {
     color: var(--active-color);
 }
 
+form label:nth-child(2) {
+    margin-top: 15px;
+}
+
 
 .container {
     max-width: 960px;

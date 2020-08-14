@@ -4,7 +4,7 @@ import api from '../../services/api'
 interface IForm {
     title: string;
     textButton: string;
-    id?: number;
+    id?: string;
 }
 
 const Form: React.FC<IForm> = (props) => {
@@ -22,6 +22,7 @@ const Form: React.FC<IForm> = (props) => {
     function handleFormSubmit(event: any) {
         event.preventDefault();
         if(props.children && props.id) {
+            console.log(props.id);
             api.put(`/users/${props.id}`, {
                 name,
                 email,
@@ -29,12 +30,16 @@ const Form: React.FC<IForm> = (props) => {
             }).then(response => alert(response.data.message));
             clearInputs();
         }
-        else {
+        else if(!props.children) {
             api.post('/users', {
                 name,
                 email,
                 phone
             }).then(response => alert(response.data.message));
+            clearInputs();
+        }
+        else {
+            alert('Insira um ID válido.')
             clearInputs();
         }
         

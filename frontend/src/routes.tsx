@@ -8,9 +8,9 @@ import Delete from './components/Delete'
 import IDField from './components/IDField';
 
 const Routes = () => {
-    const [id, setId] = useState(0);
+    const [id, setId] = useState('');
 
-    function handleIdChange(value: number) {
+    function handleIdChange(value: string) {
         setId(value);
     }
 

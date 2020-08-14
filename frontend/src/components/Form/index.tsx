@@ -1,19 +1,19 @@
 import React from 'react';
 
-import Header from '../Header';
+interface IForm {
+    title: string;
+    textButton: string;
+}
 
-import '../Create/styles.css'
-
-const Update = () => {
+const Form: React.FC<IForm> = (props) => {
     return (
         <div>
-            <Header />
             <main className="container main smaller">
-                <h2>Update a user</h2>
+                <h2>{props.title}</h2>
                 <form>
-                    <label htmlFor="id">Insert the ID</label>
-                    <input type="text"/>
-                    
+
+                    {props.children}
+
                     <label htmlFor="name">Name</label>
                     <input name="name" id="name" type="text"/>
 
@@ -23,11 +23,11 @@ const Update = () => {
                     <label htmlFor="phone">Phone</label>
                     <input name="phone" id="phone" type="text"/>
 
-                    <button type="submit">Update</button>
+                    <button type="submit">{props.textButton}</button>
                 </form>
             </main>
         </div>
     );
-}
+};
 
-export default Update;
+export default Form;

@@ -1,12 +1,12 @@
 p > span {
-    color: burlywood;
+    color: var(--active-color);
 }
 
 
 h1 {
     font-family: Poppins;
     font-size: 48px;
-    color: rgb(228, 166, 86);
+    color: var(--active-color);
     margin-bottom: 30px;
 }
 
